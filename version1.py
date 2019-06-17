@@ -1,3 +1,29 @@
+class database:
+    def build_database():
+        cnx = mysql.connector.connect(user='root', password='',
+                                      host='localhost')
+        cur = cnx.cursor()
+        cur.execute("create database if not exists expenditure")
+        cnx.close()
+
+    def build_table():
+        cnx = mysql.connector.connect(user='root', password='',
+                                      host='localhost', database="expenditure")
+        cur = cnx.cursor()
+        cur.execute(
+            "create table if not exists expense (id int auto_increment primary key, iname varchar(255) ,icost float, edate date)")
+        cnx.close()
+
+    def insert_fields(n, c, d):
+        cnx = mysql.connector.connect(user='root', password='',
+                                      host='localhost', database="expenditure")
+        cur = cnx.cursor()
+        sql = "insert into expense(iname,icost,edate) values(%s,%s,%s)"
+        val = (n, c, d)
+        cur.execute(sql, val)
+        cnx.commit()
+        cnx.close()
+
 class day:
     def day_expense():
         cost = []
