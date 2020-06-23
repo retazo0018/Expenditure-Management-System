@@ -8,7 +8,7 @@ Mysql to store and retrieve information.
 
 ## Screenshots
 ### CUI
-   ![CUI](/CUI.png)
+   ![CUI](/CUI - Home.png)
    
 ### Entry of Spent Item
    ![GUI](/Entry of spent item.png)
