@@ -11,7 +11,7 @@ Mysql to store and retrieve information.
    ![CUI](/CUI.png)
    
 ### Entry of Spent Item
-   ![GUI](/adding_expenditure.png)
+   ![Entry](/adding_expenditure.png)
   
 
 
